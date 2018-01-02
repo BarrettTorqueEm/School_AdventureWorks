@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "ListAddress";
+}
+
+<h2>ListAddress</h2>
+
+<table border="1">
+    <tr>
+        <th>Address Id</th>
+        <th>Address Line 1</th>
+        <th>Address Line 2</th>
+        <th>City</th>
+        <th>State/Province Id</th>
+        <th>Postal Code</th>
+        <th>Spatial Location</th>
+        <th>Row GUID</th>
+        <th>Modified Date</th>
+    </tr>
+
+    @foreach (var anItem in ViewBag.AListOfAddress)
+    {
+        <tr>
+
+            <td>@anItem.AddressId</td>
+            <td>@anItem.AddressLine1</td>
+            <td>@anItem.AddressLine2</td>
+            <td>@anItem.City</td>
+            <td>@anItem.StateProvinceId</td>
+            <td>@anItem.PostalCode</td>
+            <td>@anItem.SpatialLocation</td>
+            <td>@anItem.Rowguid</td>
+            <td>@anItem.ModifiedDate</td>
+        </tr>
+    }
+</table> <br />

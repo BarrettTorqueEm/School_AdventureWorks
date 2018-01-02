@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "ListEmployee";
+}
+
+<h2>List Employee</h2>
+
+<table border="1">
+    <tr>
+        <th>Employee Id</th>
+        <th>National Id Number</th>
+        <th>Contact Id</th>
+        <th>Login Id</th>
+        <th>Manager Id</th>
+        <th>Job Title</th>
+        <th>Birth Date</th>
+        <th>Marital Status</th>
+        <th>Gender</th>
+        <th>Hire Date</th>
+        <th>Salaried Flag</th>
+        <th>Vacation Hours</th>
+        <th>Sick Leave Hours</th>
+        <th>Current Flag</th>
+        <th>Row GUID</th>
+        <th>Modified Date</th>
+    </tr>
+
+    @foreach (var anItem in ViewBag.AListOfEmployee)
+    {
+        <tr>
+            <td>@anItem.EmployeeId</td>
+            <td>@anItem.NationalIdNumber</td>
+            <td>@anItem.ContactId</td>
+            <td>@anItem.LoginId</td>
+            <td>@anItem.ManagerId</td>
+            <td>@anItem.JobTitle</td>
+            <td>@anItem.BirthDate</td>
+            <td>@anItem.MaritalStatus</td>
+            <td>@anItem.Gender</td>
+            <td>@anItem.HireDate</td>
+            <td>@anItem.SalariedFlag</td>
+            <td>@anItem.VacationHours</td>
+            <td>@anItem.SickLeaveHours</td>
+            <td>@anItem.CurrentFlag</td>
+            <td>@anItem.Rowguid</td>
+            <td>@anItem.ModifiedDate</td>
+        </tr>
+    }
+</table> <br />

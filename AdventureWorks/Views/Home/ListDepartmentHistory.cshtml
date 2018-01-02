@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "ListDepartmentHistory";
+}
+
+<h2>ListDepartmentHistory</h2>
+
+<table border="1">
+    <tr>
+        <th>Employee Id</th>
+        <th>Department Id</th>
+        <th>Start Date</th>
+        <th>Shift Id</th>
+        <th>End Date</th>
+        <th>Modified Date</th>
+    </tr>
+
+    @foreach (var anItem in ViewBag.AListOfEmployeeHistory)
+    {
+        <tr>
+            <td>@anItem.BusinessEntityId</td>
+            <td>@anItem.DepartmentId</td>
+            <td>@anItem.StartDate</td>
+            <td>@anItem.ShiftId</td>
+            <td>@anItem.EndDate</td>
+            <td>@anItem.ModifiedDate</td>
+        </tr>
+    }
+</table> <br />

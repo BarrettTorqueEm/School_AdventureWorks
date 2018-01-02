@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "ListDepartment";
+}
+
+<h2>List Department</h2>
+
+<table border="1">
+    <tr>
+        <th>Department Id</th>
+        <th>Name</th>
+        <th>Group Name</th>
+        <th>Modified Date</th>
+    </tr>
+
+    @foreach (var anItem in ViewBag.AListOfDepartment)
+    {
+        <tr>
+            
+            <td>@anItem.DepartmentId</td>
+            <td>@anItem.Name</td>
+            <td>@anItem.GroupName</td>
+            <td>@anItem.ModifiedDate</td>
+        </tr>
+    }
+</table> <br />

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "ListShift";
+}
+
+<h2>ListShift</h2>
+
+<table border="1">
+    <tr>
+        <th>Shift Id</th>
+        <th>Name</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Modified Date</th>
+    </tr>
+
+    @foreach (var anItem in ViewBag.AListOfShift)
+    {
+        <tr>
+
+            <td>@anItem.ShiftId</td>
+            <td>@anItem.Name</td>
+            <td>@anItem.StartTime</td>
+            <td>@anItem.EndTime</td>
+            <td>@anItem.ModifiedDate</td>
+        </tr>
+    }
+</table> <br />

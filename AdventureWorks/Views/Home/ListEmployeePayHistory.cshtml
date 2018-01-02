@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "ListEmployeePayHistory";
+}
+
+<h2>ListEmployeePayHistory</h2>
+
+<table border="1">
+    <tr>
+        <th>Employee Id</th>
+        <th>Rate Change Date</th>
+        <th>Rate</th>
+        <th>Pay Frequency</th>
+        <th>Modified Date</th>
+    </tr>
+
+    @foreach (var anItem in ViewBag.AListOfEmployeePayHistory)
+    {
+        <tr>
+            <td>@anItem.BusinessEntityId</td>
+            <td>@anItem.RateChangeDate</td>
+            <td>@anItem.Rate</td>
+            <td>@anItem.PayFrequencey</td>
+            <td>@anItem.ModifiedDate</td>
+        </tr>
+    }
+</table> <br />
